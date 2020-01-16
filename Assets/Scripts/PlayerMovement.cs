@@ -49,6 +49,11 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("isRunning",false);
         }
 
+        if (Input.GetMouseButtonDown(0))
+        {
+            anim.SetTrigger("attack");
+        }
+
 
         //Flipper spilleren
         if (facingRight == false && moveInput > 0)
